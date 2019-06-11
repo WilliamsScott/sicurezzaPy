@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainAgregarDueno</class>
+ <widget class="QMainWindow" name="MainAgregarDueno">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1272</width>
+    <height>828</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background:black;
+}
+
+QLabel{
+color:orange;
+}
+QLineEdit{
+border:0;
+border-radius: 5px;
+background: rgba(248,124,0,0.7);
+padding:8px;
+font-size:14;
+color:white;
+}
+QTableWidget{
+border:0;
+color:white;
+background:transparent;
+}
+QTableWidget::item{
+	border:1px solid orange;
+}
+QHeaderView,QHeaderView::section{
+background-color:orange;
+}
+
+QPushButton{
+background:orange;
+border-radius:15px;
+}
+QPushButton:hover{
+background:rgb(245,124,0);
+}
+QDateTimeEdit{
+background:rgba(245,124,0,0.7);
+border-radius:5px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>30</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Agregar Dueño</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>110</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rut</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>150</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>190</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apellido</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>230</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Telefono</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtRut">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>110</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNombre">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>150</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtApellido">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>190</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtTelefono">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>230</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAgregar">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>600</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="cbtnIrDeptos">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>580</y>
+      <width>351</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IR A DEPARTAMENTOS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fondo.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancelar">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>610</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancelar</string>
+    </property>
+   </widget>
+   <zorder>label_6</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>txtRut</zorder>
+   <zorder>txtNombre</zorder>
+   <zorder>txtApellido</zorder>
+   <zorder>txtTelefono</zorder>
+   <zorder>btnAgregar</zorder>
+   <zorder>cbtnIrDeptos</zorder>
+   <zorder>btnCancelar</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1272</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

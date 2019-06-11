@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainEliminarResidente.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainElimR(object):
+    def setupUi(self, MainElimR):
+        MainElimR.setObjectName("MainElimR")
+        MainElimR.resize(992, 705)
+        MainElimR.setMinimumSize(QtCore.QSize(1000, 600))
+        MainElimR.setMaximumSize(QtCore.QSize(1000, 600))
+        self.centralwidget = QtWidgets.QWidget(MainElimR)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(170, 110, 101, 21))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.txtBuscar = QtWidgets.QLineEdit(self.centralwidget)
+        self.txtBuscar.setGeometry(QtCore.QRect(280, 110, 301, 31))
+        self.txtBuscar.setObjectName("txtBuscar")
+        self.btnBuscarResidente = QtWidgets.QPushButton(self.centralwidget)
+        self.btnBuscarResidente.setGeometry(QtCore.QRect(600, 110, 93, 28))
+        self.btnBuscarResidente.setObjectName("btnBuscarResidente")
+        self.tableResidentes = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableResidentes.setGeometry(QtCore.QRect(60, 210, 901, 111))
+        self.tableResidentes.setObjectName("tableResidentes")
+        self.tableResidentes.setColumnCount(8)
+        self.tableResidentes.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableResidentes.setHorizontalHeaderItem(7, item)
+        self.tableResidentes.verticalHeader().setVisible(False)
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(330, 30, 271, 31))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.btnEliminar = QtWidgets.QPushButton(self.centralwidget)
+        self.btnEliminar.setGeometry(QtCore.QRect(660, 390, 93, 28))
+        self.btnEliminar.setObjectName("btnEliminar")
+        self.btnCancelar = QtWidgets.QPushButton(self.centralwidget)
+        self.btnCancelar.setGeometry(QtCore.QRect(100, 400, 93, 28))
+        self.btnCancelar.setObjectName("btnCancelar")
+        MainElimR.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainElimR)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 992, 26))
+        self.menubar.setObjectName("menubar")
+        MainElimR.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainElimR)
+        self.statusbar.setObjectName("statusbar")
+        MainElimR.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainElimR)
+        QtCore.QMetaObject.connectSlotsByName(MainElimR)
+
+    def retranslateUi(self, MainElimR):
+        _translate = QtCore.QCoreApplication.translate
+        MainElimR.setWindowTitle(_translate("MainElimR", "MainWindow"))
+        self.label.setText(_translate("MainElimR", "Nombre o RUT"))
+        self.btnBuscarResidente.setText(_translate("MainElimR", "Buscar"))
+        item = self.tableResidentes.horizontalHeaderItem(0)
+        item.setText(_translate("MainElimR", "RUT"))
+        item = self.tableResidentes.horizontalHeaderItem(1)
+        item.setText(_translate("MainElimR", "Nombre"))
+        item = self.tableResidentes.horizontalHeaderItem(2)
+        item.setText(_translate("MainElimR", "Apellido"))
+        item = self.tableResidentes.horizontalHeaderItem(3)
+        item.setText(_translate("MainElimR", "Edificio"))
+        item = self.tableResidentes.horizontalHeaderItem(4)
+        item.setText(_translate("MainElimR", "Departamento"))
+        item = self.tableResidentes.horizontalHeaderItem(5)
+        item.setText(_translate("MainElimR", "Telefono"))
+        item = self.tableResidentes.horizontalHeaderItem(6)
+        item.setText(_translate("MainElimR", "Vehiculo"))
+        item = self.tableResidentes.horizontalHeaderItem(7)
+        item.setText(_translate("MainElimR", "Eliminar"))
+        self.label_2.setText(_translate("MainElimR", "Eliminar Residente"))
+        self.btnEliminar.setText(_translate("MainElimR", "Eliminar"))
+        self.btnCancelar.setText(_translate("MainElimR", "Cancelar"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainElimR = QtWidgets.QMainWindow()
+    ui = Ui_MainElimR()
+    ui.setupUi(MainElimR)
+    MainElimR.show()
+    sys.exit(app.exec_())
+

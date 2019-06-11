@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainBuscarVehiculo.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainBuscarVehiculo(object):
+    def setupUi(self, MainBuscarVehiculo):
+        MainBuscarVehiculo.setObjectName("MainBuscarVehiculo")
+        MainBuscarVehiculo.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainBuscarVehiculo)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(280, 20, 191, 41))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.label.setFont(font)
+        self.label.setStyleSheet("color:white")
+        self.label.setObjectName("label")
+        self.cboBuscar = QtWidgets.QComboBox(self.centralwidget)
+        self.cboBuscar.setGeometry(QtCore.QRect(60, 90, 171, 22))
+        self.cboBuscar.setObjectName("cboBuscar")
+        self.cboBuscar.addItem("")
+        self.cboBuscar.addItem("")
+        self.cboBuscar.addItem("")
+        self.txtBuscar = QtWidgets.QLineEdit(self.centralwidget)
+        self.txtBuscar.setGeometry(QtCore.QRect(270, 90, 321, 22))
+        self.txtBuscar.setObjectName("txtBuscar")
+        self.btnBuscar = QtWidgets.QPushButton(self.centralwidget)
+        self.btnBuscar.setGeometry(QtCore.QRect(630, 90, 93, 28))
+        self.btnBuscar.setObjectName("btnBuscar")
+        self.tableVehiculos = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableVehiculos.setGeometry(QtCore.QRect(60, 180, 661, 192))
+        self.tableVehiculos.setObjectName("tableVehiculos")
+        self.tableVehiculos.setColumnCount(6)
+        self.tableVehiculos.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableVehiculos.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableVehiculos.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableVehiculos.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableVehiculos.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableVehiculos.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableVehiculos.setHorizontalHeaderItem(5, item)
+        self.btnCancelar = QtWidgets.QPushButton(self.centralwidget)
+        self.btnCancelar.setGeometry(QtCore.QRect(60, 460, 93, 28))
+        self.btnCancelar.setObjectName("btnCancelar")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(-530, -130, 2141, 721))
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("w2.jpg"))
+        self.label_2.setObjectName("label_2")
+        self.label_2.raise_()
+        self.label.raise_()
+        self.cboBuscar.raise_()
+        self.txtBuscar.raise_()
+        self.btnBuscar.raise_()
+        self.tableVehiculos.raise_()
+        self.btnCancelar.raise_()
+        MainBuscarVehiculo.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainBuscarVehiculo)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setObjectName("menubar")
+        MainBuscarVehiculo.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainBuscarVehiculo)
+        self.statusbar.setObjectName("statusbar")
+        MainBuscarVehiculo.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainBuscarVehiculo)
+        QtCore.QMetaObject.connectSlotsByName(MainBuscarVehiculo)
+
+    def retranslateUi(self, MainBuscarVehiculo):
+        _translate = QtCore.QCoreApplication.translate
+        MainBuscarVehiculo.setWindowTitle(_translate("MainBuscarVehiculo", "MainWindow"))
+        self.label.setText(_translate("MainBuscarVehiculo", "Buscar Vehiculo"))
+        self.cboBuscar.setItemText(0, _translate("MainBuscarVehiculo", "-Buscar por-"))
+        self.cboBuscar.setItemText(1, _translate("MainBuscarVehiculo", "Patente"))
+        self.cboBuscar.setItemText(2, _translate("MainBuscarVehiculo", "Dueño"))
+        self.btnBuscar.setText(_translate("MainBuscarVehiculo", "Buscar"))
+        item = self.tableVehiculos.horizontalHeaderItem(0)
+        item.setText(_translate("MainBuscarVehiculo", "Patente"))
+        item = self.tableVehiculos.horizontalHeaderItem(1)
+        item.setText(_translate("MainBuscarVehiculo", "Marca"))
+        item = self.tableVehiculos.horizontalHeaderItem(2)
+        item.setText(_translate("MainBuscarVehiculo", "Modelo"))
+        item = self.tableVehiculos.horizontalHeaderItem(3)
+        item.setText(_translate("MainBuscarVehiculo", "Estacionamiento"))
+        item = self.tableVehiculos.horizontalHeaderItem(4)
+        item.setText(_translate("MainBuscarVehiculo", "Dueño"))
+        item = self.tableVehiculos.horizontalHeaderItem(5)
+        item.setText(_translate("MainBuscarVehiculo", "Tipo Dueño"))
+        self.btnCancelar.setText(_translate("MainBuscarVehiculo", "Cancelar"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainBuscarVehiculo = QtWidgets.QMainWindow()
+    ui = Ui_MainBuscarVehiculo()
+    ui.setupUi(MainBuscarVehiculo)
+    MainBuscarVehiculo.show()
+    sys.exit(app.exec_())
+

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainCamara</class>
+ <widget class="QMainWindow" name="MainCamara">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1274</width>
+    <height>840</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background:black;
+}
+
+QLabel{
+color:orange;
+}
+QLineEdit{
+border:0;
+border-radius: 5px;
+background: rgba(248,124,0,0.7);
+padding:8px;
+font-size:14;
+color:white;
+}
+QTableWidget{
+border:0;
+color:white;
+background:transparent;
+}
+QTableWidget::item{
+	border:1px solid orange;
+}
+QHeaderView,QHeaderView::section{
+background-color:orange;
+}
+
+QPushButton{
+background:orange;
+border-radius:15px;
+}
+QPushButton:hover{
+background:rgb(245,124,0);
+}
+QDateTimeEdit{
+background:rgba(245,124,0,0.7);
+border-radius:5px;
+}
+QComboBox{
+background:rgba(245,124,0,0.7);
+border-radius:15px;
+}
+QRadioButton{
+color:orange
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnVerCamara">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>80</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver cámara</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPrueba">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPrueba">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>400</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancelar">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>660</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancelar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnExcel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>490</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>excel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ver Cámara</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fondo.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtDireccion">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>230</y>
+      <width>381</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>230</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ingresar dirección</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnVerCamara_2">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>230</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver cámara 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>10</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>logo.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>40</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sicurezza</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>btnVerCamara</zorder>
+   <zorder>btnPrueba</zorder>
+   <zorder>labelPrueba</zorder>
+   <zorder>btnCancelar</zorder>
+   <zorder>btnExcel</zorder>
+   <zorder>label_14</zorder>
+   <zorder>txtDireccion</zorder>
+   <zorder>label_2</zorder>
+   <zorder>btnVerCamara_2</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1274</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVer_en_vivo">
+   <property name="text">
+    <string>Ver en vivo</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

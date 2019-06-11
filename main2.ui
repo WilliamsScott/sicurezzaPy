@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main2</class>
+ <widget class="QMainWindow" name="main2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1216</width>
+    <height>830</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu Principal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background:black;
+}
+
+QLabel{
+color:orange;
+}
+QLineEdit{
+border:0;
+border-radius: 5px;
+background: rgba(248,124,0,0.7);
+padding:8px;
+font-size:14;
+color:white;
+}
+QTableWidget{
+border:0;
+color:white;
+background:transparent;
+}
+QTableWidget::item{
+	border:1px solid orange;
+}
+QHeaderView,QHeaderView::section{
+background-color:orange;
+}
+
+QPushButton{
+background:orange;
+border-radius:15px;
+}
+QPushButton:hover{
+background:rgb(245,124,0);
+}
+QDateTimeEdit{
+background:rgba(245,124,0,0.7);
+border-radius:5px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QMainWindow{
+background:black;
+}
+
+QLabel{
+color:orange;
+}
+QLineEdit{
+border:0;
+border-radius: 5px;
+background: rgba(248,124,0,0.7);
+padding:8px;
+font-size:14;
+color:white;
+}
+QTableWidget{
+border:0;
+color:white;
+background:transparent;
+}
+QTableWidget::item{
+	border:1px solid orange;
+}
+QHeaderView,QHeaderView::section{
+background-color:orange;
+}
+
+QPushButton{
+background:orange;
+border-radius:15px;
+}
+QPushButton:hover{
+background:rgb(245,124,0);
+}
+QDateTimeEdit{
+background:rgba(245,124,0,0.7);
+border-radius:5px;
+}
+</string>
+   </property>
+   <widget class="QTableWidget" name="tableTest">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>120</y>
+      <width>251</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:10px;
+</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Número</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Estado</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>50</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Estacionamientos</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>440</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1221</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fondo.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>10</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>logo.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>40</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sicurezza</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRevisar">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>120</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Revisar</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>tableTest</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>btnRevisar</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1216</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuC_maras">
+    <property name="title">
+     <string>Cámaras</string>
+    </property>
+    <addaction name="actionVerCamara"/>
+   </widget>
+   <widget class="QMenu" name="menuResidentes">
+    <property name="title">
+     <string>Residentes</string>
+    </property>
+    <addaction name="actionAgregar_Residente"/>
+    <addaction name="actionEditar_Residente"/>
+    <addaction name="actionBuscar_Residente"/>
+    <addaction name="actionEliminar_Residente"/>
+   </widget>
+   <widget class="QMenu" name="menuVisitas">
+    <property name="title">
+     <string>Visitas</string>
+    </property>
+    <addaction name="actionAgregarVisita"/>
+    <addaction name="actionBuscar_visita"/>
+   </widget>
+   <widget class="QMenu" name="menuVehiculos">
+    <property name="title">
+     <string>Vehiculos</string>
+    </property>
+    <addaction name="actionBuscar_vehiculo"/>
+    <addaction name="actionA_adir_vehiculo_residente"/>
+    <addaction name="actionEliminar_vehiculo_residente"/>
+   </widget>
+   <widget class="QMenu" name="menuAdministraci_n">
+    <property name="title">
+     <string>Estacionamientos</string>
+    </property>
+    <addaction name="actionVer_en_vivo_2"/>
+    <addaction name="actionAgregar_estacionamiento"/>
+    <addaction name="actionQuitar_estacionamiento"/>
+    <addaction name="actionReservar_estacionamiento"/>
+   </widget>
+   <widget class="QMenu" name="menuAdministraci_n_2">
+    <property name="title">
+     <string>Administración</string>
+    </property>
+    <widget class="QMenu" name="menuDue_os">
+     <property name="title">
+      <string>Dueños</string>
+     </property>
+     <addaction name="actionAgregar"/>
+     <addaction name="actionEditar"/>
+     <addaction name="actionEliminar"/>
+     <addaction name="actionBuscar_2"/>
+     <addaction name="actionAsignar"/>
+    </widget>
+    <widget class="QMenu" name="menuArrendatarios">
+     <property name="title">
+      <string>Arrendatarios</string>
+     </property>
+     <addaction name="actionAgregar_2"/>
+     <addaction name="actionEditar_2"/>
+     <addaction name="actionEliminar_2"/>
+     <addaction name="actionBuscar_3"/>
+    </widget>
+    <addaction name="actionMostar_Edificios"/>
+    <addaction name="actionBuscar_Departamento"/>
+    <addaction name="actionEditar_Departamento"/>
+    <addaction name="menuDue_os"/>
+    <addaction name="menuArrendatarios"/>
+    <addaction name="actionGenerar_Informe"/>
+   </widget>
+   <widget class="QMenu" name="menuUsuarios">
+    <property name="title">
+     <string>Usuarios</string>
+    </property>
+    <addaction name="actionAgregar_Usuario"/>
+    <addaction name="actionEditar_Usuario"/>
+    <addaction name="actionQuitar_Usuario"/>
+   </widget>
+   <addaction name="menuC_maras"/>
+   <addaction name="menuResidentes"/>
+   <addaction name="menuVisitas"/>
+   <addaction name="menuUsuarios"/>
+   <addaction name="menuVehiculos"/>
+   <addaction name="menuAdministraci_n"/>
+   <addaction name="menuAdministraci_n_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVerCamara">
+   <property name="text">
+    <string>Ver en vivo</string>
+   </property>
+  </action>
+  <action name="actionAgregar_Residente">
+   <property name="text">
+    <string>Agregar Residente</string>
+   </property>
+  </action>
+  <action name="actionEditar_Residente">
+   <property name="text">
+    <string>Editar Residente</string>
+   </property>
+  </action>
+  <action name="actionBuscar_Residente">
+   <property name="text">
+    <string>Buscar Residente</string>
+   </property>
+  </action>
+  <action name="actionEliminar_Residente">
+   <property name="text">
+    <string>Eliminar Residente</string>
+   </property>
+  </action>
+  <action name="actionBuscar_vehiculo">
+   <property name="text">
+    <string>Buscar vehiculo</string>
+   </property>
+  </action>
+  <action name="actionA_adir_vehiculo_residente">
+   <property name="text">
+    <string>Añadir vehiculo residente</string>
+   </property>
+  </action>
+  <action name="actionEliminar_vehiculo_residente">
+   <property name="text">
+    <string>Eliminar vehiculo residente</string>
+   </property>
+  </action>
+  <action name="actionAgregarVisita">
+   <property name="text">
+    <string>Agregar visita</string>
+   </property>
+  </action>
+  <action name="actionBuscar_visita">
+   <property name="text">
+    <string>Buscar visita</string>
+   </property>
+  </action>
+  <action name="actionVer_en_vivo_2">
+   <property name="text">
+    <string>Ver en vivo</string>
+   </property>
+  </action>
+  <action name="actionAgregar_estacionamiento">
+   <property name="text">
+    <string>Agregar estacionamiento</string>
+   </property>
+  </action>
+  <action name="actionQuitar_estacionamiento">
+   <property name="text">
+    <string>Quitar estacionamiento</string>
+   </property>
+  </action>
+  <action name="actionReservar_estacionamiento">
+   <property name="text">
+    <string>Reservar estacionamiento</string>
+   </property>
+  </action>
+  <action name="actionAgregar_Usuario">
+   <property name="text">
+    <string>Agregar Usuario</string>
+   </property>
+  </action>
+  <action name="actionEditar_Usuario">
+   <property name="text">
+    <string>Editar Usuario</string>
+   </property>
+  </action>
+  <action name="actionQuitar_Usuario">
+   <property name="text">
+    <string>Habilitar/ Deshabilitar Usuario</string>
+   </property>
+  </action>
+  <action name="actionMostar_Edificios">
+   <property name="text">
+    <string>Mostar Edificios</string>
+   </property>
+  </action>
+  <action name="actionBuscar_Departamento">
+   <property name="text">
+    <string>Buscar Departamento</string>
+   </property>
+  </action>
+  <action name="actionEditar_Departamento">
+   <property name="text">
+    <string>Editar Departamento</string>
+   </property>
+  </action>
+  <action name="actionAgregar">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionEditar">
+   <property name="text">
+    <string>Editar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionBuscar">
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </action>
+  <action name="actionAgregar_2">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionQuitar">
+   <property name="text">
+    <string>Quitar</string>
+   </property>
+  </action>
+  <action name="actionBuscar_2">
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </action>
+  <action name="actionEditar_2">
+   <property name="text">
+    <string>Editar</string>
+   </property>
+  </action>
+  <action name="actionEliminar_2">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionBuscar_3">
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </action>
+  <action name="actionAsignar">
+   <property name="text">
+    <string>Asignar</string>
+   </property>
+  </action>
+  <action name="actionGenerar_Informe">
+   <property name="text">
+    <string>Generar Informe</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="test.qrc"/>
+ </resources>
+ <connections/>
+</ui>
